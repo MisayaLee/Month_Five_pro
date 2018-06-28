@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/one_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/one_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/one_check" />
+
+    <TextView
+        android:id="@+id/one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/one_iv"
+        android:layout_toRightOf="@+id/one_iv"
+        android:text="让一切走吧" />
+
+    <TextView
+        android:id="@+id/one_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_title"
+        android:layout_margin="25dp"
+        android:layout_toRightOf="@id/one_iv"
+        android:text="龙梅子" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:id="@+id/one_si"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/one_title"
+        android:text="北京普天同乐文化传媒有限公司"
+        android:textSize="14sp" />
+</RelativeLayout>
